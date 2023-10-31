@@ -6,92 +6,52 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ARNavigation.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Defined Account/Registration (Admin)/1st Scene (Auto Play
+      - Whole)/Ready (Admin).unity
+    guid: 7171cce2a61e3be4c9fec757c6dcc857
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/1st Scene/Student
-      Side.unity
-    guid: d38a3c652fab9b44381d786b3a504fee
+    path: Assets/Scenes/Defined Account/Registration (Admin)/2nd Scene (Home)/Home
+      (Admin).unity
+    guid: 5a864ce7f5e684a4d99bb153f5f3da5c
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/1st Scene (Auto Play
-      - Whole)/Student Side.unity
-    guid: 7e94417032e0c06409c37010088796bb
+    path: Assets/Scenes/Defined Account/Registration (Admin)/About/About (Admin).unity
+    guid: 1dbafc25b83900c47823b834cb53111e
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/2nd Scene (Home)/Home
-      (Signed).unity
-    guid: c724b4ea5bf897548bdeb37002156db5
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Account & profiles/A&P
+      (Admin).unity
+    guid: b51dc574f5e322f4793255298453c047
   - enabled: 1
-    path: Assets/Scenes/Undefined Account/2nd Scene Home/Home (Unsigned).unity
-    guid: e19f6227f9cd49e48850452471965b2b
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Account & profiles (feedback
+      history)/Feedback History (Admin).unity
+    guid: 2c2eeeef8323e074ab8ca5ecb8143f32
   - enabled: 1
-    path: Assets/Scenes/Undefined Account/3rd Scene (Choose Profile)/Choose your
-      profile.unity
-    guid: 420518812f5631148a532ea0db397842
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Account & profiles (report
+      history)/Report History (Admin).unity
+    guid: b322724853614844bab2799699bbc78d
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/About/About.unity
-    guid: fe9450a01472b9c469e7bb6e2d5d2da6
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Add Feedback/Add Feedback
+      (Admin).unity
+    guid: 5f918af92eab3824fb4834f2460e6fe0
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Account & profiles
-      (feedback history)/Account & profiles.unity
-    guid: 1b3f86b30f9d5054faa1d5129d0a963e
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Chat/Chat_1.unity
+    guid: b7df562427c3a414fb009025cf00f077
   - enabled: 1
-    path: Assets/Scenes/Undefined Account/Account & profiles p1/Sample.unity
-    guid: 257e6a14a90a2dd4992e07f77106f3e5
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Chat/Chat_2.unity
+    guid: 10a0e440ca6b3c84abeb9f81543818b2
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Account & profiles
-      (report history)/Account & profiles p2 (report).unity
-    guid: 6a080a91871cdd04bac4b30e027fe408
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Chat/Chat_3.unity
+    guid: dc76711717b0ae8488c6e54f5b374cbc
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Account & profiles
-      p1/Account & profiles p2 (feedback).unity
-    guid: 4d069b7e744266f4a8d1d09482a24f8d
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Evacuation Plan/Evacuation
+      Plan (Admin).unity
+    guid: 31b16879e2c63f3488d916aaf8d71f26
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Add feedback/Add Feedback.unity
-    guid: 4defabaaa64828f45a72e9f40c27aca7
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Feedback/Feedback Sample
+      (Admin).unity
+    guid: 37eee6f96e509214b927997809b412b4
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Chat/Chat 2.unity
-    guid: 987f80a20dc33374cae1538bb39bd2bc
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Chat/Chat.unity
-    guid: 832d4fb3f9d205b4288bfa3dd003f41f
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Chat/Chat 1.unity
-    guid: 0ba97634e62f4404ca61bcb0613f027e
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Evacuation Plan/Evacuation Plan.unity
-    guid: d98c5a680c1f0204b8fae933855f809b
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Feedback/Feedback
-      Real.unity
-    guid: 9ee64130fee089940b9804b91b392148
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Feedback/Sample Feedback.unity
-    guid: b8932dd3b8c390d4bbc6c5fd9e3e3568
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Log In (Student)/Log
-      In (Student).unity
-    guid: 07897ceeae4e3e04ab5708ceee88eb9d
-  - enabled: 1
-    path: Assets/Scenes/Undefined Account/Log On (Admin)/Log On (Admin).unity
-    guid: 4a02571128d7e26438577b0b2f6a468a
-  - enabled: 1
-    path: Assets/Scenes/Undefined Account/Log On (Student)/Log On (Student).unity
-    guid: 2f983fd2c02e3af4bb77409c05bb0994
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Log Out/Logout.unity
-    guid: d901d052e7022f14c91c9f2979a00d3d
-  - enabled: 1
-    path: Assets/Scenes/Undefined Account/Registration (Admin)/Registration (Admin).unity
-    guid: 42c904a1c0293044dbf2c834fdd54218
-  - enabled: 1
-    path: Assets/Scenes/Undefined Account/Registration (Student)/Registration (Student).unity
-    guid: 9dd637bd4060379478324d9766177a1d
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Report/Report.unity
-    guid: d13d9b0112f160e43a6d596e4c3e643c
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Student)/Report/Sample.unity
-    guid: 7a7c22e1cb23fc840b4662e3fa8f7814
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Log Out/Logout (Admin).unity
+    guid: da2f32049fdeb9942a6167734ee512a0
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 806582813b3ab4a598c99be1468eb8dd, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ba23f8fc7d526497fb79c4cb7b92919f, type: 2}
