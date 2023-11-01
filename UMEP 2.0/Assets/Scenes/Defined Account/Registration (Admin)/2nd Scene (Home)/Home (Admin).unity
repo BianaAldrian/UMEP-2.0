@@ -2076,7 +2076,7 @@ GameObject:
   - component: {fileID: 1134838705}
   - component: {fileID: 1134838704}
   m_Layer: 0
-  m_Name: Hamburger Menu (1)
+  m_Name: Hamburger Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
