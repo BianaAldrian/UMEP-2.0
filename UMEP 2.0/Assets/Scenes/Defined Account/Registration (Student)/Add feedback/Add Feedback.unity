@@ -2659,6 +2659,7 @@ GameObject:
   - component: {fileID: 1718932553}
   - component: {fileID: 1718932552}
   - component: {fileID: 1718932556}
+  - component: {fileID: 1718932557}
   m_Layer: 5
   m_Name: Add Feedback
   m_TagString: Untagged
@@ -2768,6 +2769,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d43c2d01ce5f34e8951f1ae695861d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1718932557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718932551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20a35adf7b2d9e44b4b1d1affc1d271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedbackInputField: {fileID: 0}
+  feedbackDisplayText: {fileID: 0}
 --- !u!1 &1802462128
 GameObject:
   m_ObjectHideFlags: 0
