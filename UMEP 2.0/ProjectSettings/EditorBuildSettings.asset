@@ -10,6 +10,13 @@ EditorBuildSettings:
       - Whole)/Ready (Admin).unity
     guid: 7171cce2a61e3be4c9fec757c6dcc857
   - enabled: 1
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Add Report/Add Report(Admin).unity
+    guid: f3038029ea21abc4f81d6235bcfadd6c
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Report Successful/Report
+      Successful(Admin).unity
+    guid: 594dbd31e5d48e8478895e5da1cdc5a2
+  - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/2nd Scene (Home)/Home
       (Admin).unity
     guid: 5a864ce7f5e684a4d99bb153f5f3da5c
@@ -25,10 +32,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Defined Account/Registration (Admin)/About/About (Admin).unity
     guid: 1dbafc25b83900c47823b834cb53111e
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/About/About (No Account
-      - Admin).unity
-    guid: db3114f129be6f54c85a81db9e5b27fb
-  - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Account & profiles/A&P
       (Admin).unity
     guid: b51dc574f5e322f4793255298453c047
@@ -40,10 +43,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Defined Account/Registration (Admin)/Account & profiles (feedback
       history)/Feedback History (Admin).unity
     guid: 2c2eeeef8323e074ab8ca5ecb8143f32
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Account & profiles (feedback
-      history)/Feedback History (No Account - Admin).unity
-    guid: 720c504473259404ca281172676964ac
   - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Account & profiles (report
       history)/Report History (No Account - Admin).unity
@@ -103,20 +102,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Defined Account/Registration (Admin)/Report/Report Real (Admin).unity
     guid: fde961468c22adf44bce7f900813c850
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Report/Report Real (No
-      Account - Admin).unity
-    guid: 5a4d79effcb4c9e4e80e13fde6d28228
-  - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Report/Report Sample
       (Admin).unity
     guid: cbad4e4246dedd544b4bff1026c219ea
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Report/Report Sample
-      (No Account - Admin).unity
-    guid: 6b5b4ae31445750488c5f23cc756bcfd
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Successfully/Successfully
-      (Admin).unity
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Add Report/Add Report.unity
     guid: 701fed62182e9e24a8092c7d7ce2b4c4
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 806582813b3ab4a598c99be1468eb8dd, type: 2}
