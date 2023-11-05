@@ -10,7 +10,7 @@ EditorBuildSettings:
       - Whole)/Ready (Admin).unity
     guid: 7171cce2a61e3be4c9fec757c6dcc857
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Add Report/Add Report(Admin).unity
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Add Feedback/Add Report(Admin).unity
     guid: f3038029ea21abc4f81d6235bcfadd6c
   - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Report Successful/Report
@@ -48,7 +48,7 @@ EditorBuildSettings:
       history)/Report History (No Account - Admin).unity
     guid: b322724853614844bab2799699bbc78d
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Add Feedback/Add Feedback
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Add Report/Add Report
       (Admin).unity
     guid: 5f918af92eab3824fb4834f2460e6fe0
   - enabled: 1
