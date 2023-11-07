@@ -69,11 +69,11 @@ EditorBuildSettings:
       Plan (No Account - Admin).unity
     guid: 9852bd88e824c2640aa35f2024058700
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Feedback/Feedback Real.unity
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Feedback/Feedback (Admin).unity
     guid: 35858bbadb870a041a7a73d9dab621cc
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Feedback/Feedback Sample
-      (Admin).unity
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Feedback/Feedback (No
+      Account - Admin).unity
     guid: 37eee6f96e509214b927997809b412b4
   - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Log In (Admin)/Log In
