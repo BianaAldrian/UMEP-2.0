@@ -445,7 +445,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Feedback (Admin)
+          m_StringArgument: Report Successful (Admin)
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &276792761
@@ -2570,7 +2570,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Feedback Sample (Admin)
+          m_StringArgument: Report Sample (Admin)
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2055482488
