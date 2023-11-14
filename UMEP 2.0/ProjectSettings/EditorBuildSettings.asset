@@ -77,25 +77,12 @@ EditorBuildSettings:
       (Admin).unity
     guid: 8f8c7e8ed1d441f4e905ff055a429992
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Chat/Chat_1.unity
-    guid: b7df562427c3a414fb009025cf00f077
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Chat/Chat_2.unity
-    guid: 10a0e440ca6b3c84abeb9f81543818b2
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Chat/Chat_3.unity
-    guid: dc76711717b0ae8488c6e54f5b374cbc
-  - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Feedback/Feedback (Admin).unity
     guid: 35858bbadb870a041a7a73d9dab621cc
   - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Feedback/Feedback (No
       Account - Admin).unity
     guid: 37eee6f96e509214b927997809b412b4
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Log In (Admin)/Log In
-      (Admin).unity
-    guid: 3d71a410dba245c40a6578c6eea166d1
   - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Log On (Admin)/Log On
       (Admin).unity
@@ -108,10 +95,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Defined Account/Registration (Admin)/Log Out/Logout (Admin).unity
     guid: da2f32049fdeb9942a6167734ee512a0
   - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Not Successfully/Not
-      Successfully.unity
-    guid: 27678fc805b2b49468a9e62a3fa97f65
-  - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Registration (Admin)/Registration
       (Admin).unity
     guid: a81dab2f856f6324db27be8ed75890c0
@@ -122,10 +105,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Report/Report Real (Admin).unity
     guid: fde961468c22adf44bce7f900813c850
-  - enabled: 1
-    path: Assets/Scenes/Defined Account/Registration (Admin)/Report/Report Real (No
-      Account - Admin).unity
-    guid: 5a4d79effcb4c9e4e80e13fde6d28228
   - enabled: 1
     path: Assets/Scenes/Defined Account/Registration (Admin)/Report/Report Sample
       (Admin).unity
@@ -146,6 +125,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Defined Account/Registration (Admin)/Evacuation Plan/Evacuation
       Plan (No Account - Admin).unity
     guid: 2886555e5519e504a87eb729f506db6e
+  - enabled: 1
+    path: Assets/Scenes/ARNavigation (Admin).unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/ARNavigation (No Account - Admin).unity
+    guid: 8faee89ffddf97742b7ba9435ff71bc2
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 806582813b3ab4a598c99be1468eb8dd, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ba23f8fc7d526497fb79c4cb7b92919f, type: 2}
