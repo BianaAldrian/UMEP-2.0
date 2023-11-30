@@ -4,5 +4,61 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 7171cce2a61e3be4c9fec757c6dcc857
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/2nd Scene (Home)/Home (No Account).unity
+    guid: 898519842d2574e49a3b06b3aa56c927
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/Account & profiles/A&P (No Account).unity
+    guid: 745559206a0cf99499189b26a1344b61
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/Account & profiles (report history)/Report
+      History (No Account).unity
+    guid: b322724853614844bab2799699bbc78d
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/Log On (Admin)/Log On (Admin).unity
+    guid: 4fbdd3ec8ff3282499d80aacb066441f
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/Log On (Student)/Log On (Student).unity
+    guid: 86c22b85f49a8c841808194d33fa27c4
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/Registration (Admin)/Registration (Admin).unity
+    guid: a81dab2f856f6324db27be8ed75890c0
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/Registration (Student)/Registration (Student).unity
+    guid: 14c96faad67b49641ab76f351e94b52a
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/Report/Report Sample (No Account).unity
+    guid: 6b5b4ae31445750488c5f23cc756bcfd
+  - enabled: 1
+    path: Assets/Scenes/About (Student).unity
+    guid: fe9450a01472b9c469e7bb6e2d5d2da6
+  - enabled: 1
+    path: Assets/Scenes/Choose your profile (No Account).unity
+    guid: 21a428ff1188f46469872300592d753d
+  - enabled: 1
+    path: Assets/Scenes/Evacuation Plan (guest and student).unity
+    guid: 2886555e5519e504a87eb729f506db6e
+  - enabled: 1
+    path: Assets/Scenes/Logout (Student).unity
+    guid: 327dfac012b70d2448bcc1549d347a22
+  - enabled: 1
+    path: Assets/Scenes/Safe Zone (Student).unity
+    guid: a2dabc4f828b51c47856d906d38953e5
+  - enabled: 1
+    path: Assets/Scenes/Successfully.unity
+    guid: 1c4849de7b7d10c439c8d295c0742a23
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Registration (Admin)/2nd Scene (Home)/Home
+      (Admin).unity
+    guid: 5a864ce7f5e684a4d99bb153f5f3da5c
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Registration (Admin)/Account & profiles (report
+      history)/Report History (Admin).unity
+    guid: 4180eda79fcf9ba478dd2166d1201b10
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: bf685e0c4cdd3432a8a5a3779e64b488, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: db3a18878011d48b5a7047e0eb5ff7b0, type: 2}
