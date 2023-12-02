@@ -6,11 +6,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public string username;
-
     public int maxMessages = 25;
-    public GameObject chatPanel, textObject;
+    public GameObject chatPanel, textObject, userIconPrefab;
     public InputField chatBox;
-
     public Color playerMessage, info;
 
     [SerializeField]
@@ -60,14 +58,22 @@ public class GameManager : MonoBehaviour
         Message newMessage = new Message();
 
         newMessage.text = text;
+        newMessage.senderUsername = username;
+        newMessage.userIconPrefab = userIconPrefab;
 
         GameObject newText = Instantiate(textObject, chatPanel.transform);
-
         newMessage.textObject = newText.GetComponent<Text>();
-
         newMessage.textObject.text = newMessage.text;
         newMessage.textObject.color = MessageTypeColor(messageType);
         newMessage.messageType = messageType; // Assign the message type
+
+        if (messageType == Message.MessageType.UserMessage)
+        {
+            // Instantiate the user icon next to the message
+            GameObject userIcon = Instantiate(userIconPrefab, chatPanel.transform);
+            RectTransform iconRect = userIcon.GetComponent<RectTransform>();
+            iconRect.anchoredPosition = new Vector2(-150f, newText.GetComponent<RectTransform>().anchoredPosition.y);
+        }
 
         messageList.Add(newMessage);
 
@@ -96,6 +102,8 @@ public class Message
     public string text;
     public Text textObject;
     public MessageType messageType;
+    public string senderUsername; // New field for sender's username
+    public GameObject userIconPrefab; // New field for user icon prefab
 
     public enum MessageType
     {
