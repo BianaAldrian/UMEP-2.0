@@ -19,7 +19,7 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
     public GameObject twoMEast, fourMEast, sixMEast, eightMEast, tenMEast, twelveMEast, fourteenMEast, sixteenMEast, eighteenMEast, twentyMEast;
     public GameObject twoMWest, fourMWest, sixMWest, eightMWest, tenMWest, twelveMWest, fourteenMWest, sixteenMWest, eighteenMWest, twentyMWest;
 
-    void Start()
+    void Awake()
     {
         // Request location permission
         if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
@@ -34,12 +34,15 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
         }
 
         // Rotate the camera based on the compass heading
-        ARCamera.transform.rotation = Quaternion.Euler(0, Input.compass.trueHeading, 0);
+        //ARCamera.transform.Rotate(0, Input.compass.trueHeading, 0);
 
         // Rotate the floorPlan in the opposite direction
-        floorPlan.transform.rotation = Quaternion.Euler(0, -Input.compass.trueHeading, 0);
+        floorPlan.transform.eulerAngles = new Vector3(0, 0, 0);
 
-        Debug.Log(Input.compass.trueHeading);
+        // Set the Y rotation of the AR camera to the compass heading.
+        ARCamera.transform.eulerAngles = new Vector3(0, -Input.compass.trueHeading, 0);
+
+        Debug.Log("Compass heading: " + Input.compass.trueHeading);
 
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
