@@ -4,6 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Scenes: []
+=======
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/SplashScreen.unity
@@ -14,6 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Interactive Map/10th floor.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+>>>>>>> 19e7119abce58599555e8053bb59bf22893929f2
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: bf685e0c4cdd3432a8a5a3779e64b488, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: db3a18878011d48b5a7047e0eb5ff7b0, type: 2}
