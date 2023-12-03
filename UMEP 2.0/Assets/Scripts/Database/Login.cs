@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Login : MonoBehaviour
 {
+    public CheckConnection checkConnection; //Calling other script to connect
+
     // Start is called before the first frame update
     void Start()
     {
