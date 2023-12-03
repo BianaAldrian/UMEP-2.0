@@ -784,7 +784,6 @@ GameObject:
   - component: {fileID: 329512336}
   - component: {fileID: 329512335}
   - component: {fileID: 329512339}
-  - component: {fileID: 329512340}
   m_Layer: 5
   m_Name: Home (With/Without Interaction)
   m_TagString: Untagged
@@ -891,19 +890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d43c2d01ce5f34e8951f1ae695861d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &329512340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329512334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8154ce139781407d813808de376b55e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Interactive: {fileID: 1549067729}
 --- !u!1 &365241136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,9 +3042,6 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1549067730}
   m_OnClick:
     m_PersistentCalls:
-<<<<<<< HEAD:UMEP 2.0/Assets/Scenes/Undefined Account/2nd Scene (Home)/Home (No Account).unity
-      m_Calls: []
-=======
       m_Calls:
       - m_Target: {fileID: 329512339}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
@@ -3069,10 +3052,9 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: ARNavigation (No Account)
+          m_StringArgument: 10th floor
           m_BoolArgument: 0
         m_CallState: 2
->>>>>>> 7e5715792471c313d63b92ee87dfe869c7c31d10:UMEP 2.0/Assets/Scenes/Undefined Account/No Account (Guest)/Home/Home (No Account).unity
 --- !u!114 &1549067730
 MonoBehaviour:
   m_ObjectHideFlags: 0

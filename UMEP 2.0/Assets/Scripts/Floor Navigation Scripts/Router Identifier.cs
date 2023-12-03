@@ -15,7 +15,8 @@ public class RouterIdentifier : MonoBehaviour
             Permission.RequestUserPermission(Permission.FineLocation);
         }
 
-        Interactive.onClick.AddListener(Identify_Router);
+        //Interactive.onClick.AddListener(Identify_Router);
+        SceneManager.LoadScene("10th floor");
     }
 
     void Identify_Router()
