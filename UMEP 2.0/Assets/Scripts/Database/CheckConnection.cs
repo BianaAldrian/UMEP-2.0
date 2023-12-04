@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 
 public class CheckConnection : MonoBehaviour
 {
-    public string IP = "192.168.10.106";
+    public string IP = "192.168.1.5";
     public bool isConnected;
 
     // Start is called before the first frame update

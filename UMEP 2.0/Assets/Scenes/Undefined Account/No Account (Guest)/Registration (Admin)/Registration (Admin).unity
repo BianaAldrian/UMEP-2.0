@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb96ef5a5c844fe6b80b5b6f31b0e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IP: 192.168.10.106
+  IP: 192.168.1.5
   isConnected: 0
 --- !u!1 &307624249
 GameObject:

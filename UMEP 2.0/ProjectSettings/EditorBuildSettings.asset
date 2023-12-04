@@ -4,9 +4,6 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< HEAD
-  m_Scenes: []
-=======
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/SplashScreen.unity
@@ -17,7 +14,184 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Interactive Map/10th floor.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
->>>>>>> 19e7119abce58599555e8053bb59bf22893929f2
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/About/About (No Account).unity
+    guid: 96f119e657d908d41b7f7e8aa7912311
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Account & profiles/A&P
+      (No Account).unity
+    guid: 745559206a0cf99499189b26a1344b61
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Chat/Chat (No Account).unity
+    guid: 19baef92fd7d5b347b86da582a302b49
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Log On (Admin)/Log On
+      (Admin).unity
+    guid: 4fbdd3ec8ff3282499d80aacb066441f
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Log On (Student)/Log
+      On (Student).unity
+    guid: 86c22b85f49a8c841808194d33fa27c4
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Quit/Quit (No Account).unity
+    guid: 188646b7aca4166459fb5b288e2d886d
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Registration (Admin)/Registration
+      (Admin).unity
+    guid: a81dab2f856f6324db27be8ed75890c0
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Registration (Student)/Registration
+      (Student).unity
+    guid: 14c96faad67b49641ab76f351e94b52a
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Report/Report Sample
+      (No Account).unity
+    guid: 6b5b4ae31445750488c5f23cc756bcfd
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Report History/Report
+      History (No Account).unity
+    guid: b322724853614844bab2799699bbc78d
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Safe Zone/Safe Zone
+      (No Account).unity
+    guid: 1ea6fcafc0a9061408355efd3bf3755c
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/About/About
+      (Student).unity
+    guid: fe9450a01472b9c469e7bb6e2d5d2da6
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Account & profiles/A&P
+      (Student).unity
+    guid: 1b3f86b30f9d5054faa1d5129d0a963e
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Actual_Camera/Actual_Camera
+      (Student).unity
+    guid: f7454c1597d396547a17fc0749c19ca4
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Actual_Camera/Another_Actual_Camera
+      (Student).unity
+    guid: 6219377a59c5e314d9aa0538223a17af
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Actual_Gallery/Actual_Gallery
+      (Student).unity
+    guid: fa71fe5c487ad324fb8d715d45099f74
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Add Report/Add
+      Report (Student).unity
+    guid: 78b9b46653922144a81ae7c2c0ee22a2
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Audio/Audio
+      (Student).unity
+    guid: 2353cce0a1f9d8d40802bed97e1cbf06
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Camera/Camera
+      (Student).unity
+    guid: f8d22b3babcb9e746916f5ef78d740fb
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Chat/Chat (Student).unity
+    guid: 982b5cfa8cbff6548abfa45d465af88e
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Home/Home (Student).unity
+    guid: c724b4ea5bf897548bdeb37002156db5
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Logout/Logout
+      (Student).unity
+    guid: 327dfac012b70d2448bcc1549d347a22
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Recorder/Recorder
+      (Student).unity
+    guid: e9d55087e4b3aa64b8d2c6a77fd4b978
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Report/Report
+      Sample (Student).unity
+    guid: 80d831c5591dec449a11bcf5e6a6dba0
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Report history/Report
+      History (Student).unity
+    guid: dc9512409331e884e99b80bd1daaca30
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Successfully
+      Created/Successfully (Student).unity
+    guid: 1c4849de7b7d10c439c8d295c0742a23
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Successfully
+      Reported/Report Successful (Student).unity
+    guid: adc9e77d07f506e408f2ff98ace3bc31
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/About/About (Admin).unity
+    guid: 6b5c6f84c0ee06b49a2127b99e6b74b6
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Account & profiles/A&P
+      (Admin).unity
+    guid: b51dc574f5e322f4793255298453c047
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Actual_Camera/Actual_Camera
+      (Admin).unity
+    guid: 16edb2e5f36fd4a418e3bbc82f1cb435
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Actual_Camera/Another_Actual_Camera
+      (Admin).unity
+    guid: bfc86a646525cf343984cfb4c5769811
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Actual_Gallery/Actual_Gallery
+      (Admin).unity
+    guid: b0d0713cc69c1ce429d4dec422edf4ab
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Add Report/Add
+      Report (Admin).unity
+    guid: 5f918af92eab3824fb4834f2460e6fe0
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Audio/Audio (Admin).unity
+    guid: 9edd73d594341ca458f545fa23c0f766
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Camera/Camera
+      (Admin).unity
+    guid: 3c5e555d1b5647945b3537d9d8361793
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Chat/Chat (Admin).unity
+    guid: 0b595822bac9eaa44ac7ffd556337ad9
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Evacuation Plan/Evacuation
+      Plan (Admin).unity
+    guid: 9852bd88e824c2640aa35f2024058700
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Home/Home (Admin).unity
+    guid: 5a864ce7f5e684a4d99bb153f5f3da5c
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Interactive Map/Interactive
+      Map (Admin).unity
+    guid: 5ef08b01f1fe61a4d8d68b5ce0765b65
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Location Tracker/LocationTracker
+      (Admin).unity
+    guid: 14b506629d4eb3a448f8932ee7be3f88
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Logout/Logout
+      (Admin).unity
+    guid: a6bd0d9795002a94384f30e51640b38b
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Recorder/Recorder
+      (Admin).unity
+    guid: d9212fe45feb0204192011c3c2e98bba
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Report/Report
+      Sample (Admin).unity
+    guid: cbad4e4246dedd544b4bff1026c219ea
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Report History/Report
+      History (Admin).unity
+    guid: 4180eda79fcf9ba478dd2166d1201b10
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Successfully Reported/Report
+      Successful (Admin).unity
+    guid: 3c2e827f7b5cb1b4d84685b6482abded
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Successfully Created/Successfully
+      (Admin).unity
+    guid: e87eb4e8e4bb44e43b6d993a22323b3f
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/Choose your profile (No Account).unity
+    guid: 21a428ff1188f46469872300592d753d
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: bf685e0c4cdd3432a8a5a3779e64b488, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: db3a18878011d48b5a7047e0eb5ff7b0, type: 2}

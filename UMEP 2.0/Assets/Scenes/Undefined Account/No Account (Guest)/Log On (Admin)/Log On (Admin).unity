@@ -394,6 +394,8 @@ GameObject:
   - component: {fileID: 551407047}
   - component: {fileID: 551407046}
   - component: {fileID: 551407050}
+  - component: {fileID: 551407052}
+  - component: {fileID: 551407051}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -503,6 +505,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d43c2d01ce5f34e8951f1ae695861d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &551407051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551407045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1dbcb7d281c4a6fa7252b10ca4ff3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkConnection: {fileID: 551407052}
+  next_scene: Home (Admin)
+  user_type: admin
+  errorHolder: {fileID: 1698026513}
+  id_number: {fileID: 2037710419}
+  password: {fileID: 759980251}
+  proceed: {fileID: 1291750199}
+--- !u!114 &551407052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551407045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb96ef5a5c844fe6b80b5b6f31b0e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IP: 192.168.1.5
+  isConnected: 0
 --- !u!1 &590777934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,19 +1241,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1291750200}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 551407050}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: GoToScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Home (Admin)
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1291750200
 MonoBehaviour:
   m_ObjectHideFlags: 0

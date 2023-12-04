@@ -918,7 +918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &235584788
 Transform:
   m_ObjectHideFlags: 0
@@ -935,7 +935,7 @@ Transform:
   - {fileID: 1215945049}
   - {fileID: 530041603}
   - {fileID: 182450008}
-  m_Father: {fileID: 1070901467}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275333015
 GameObject:
@@ -5678,7 +5678,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1070901467}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048389760
 GameObject:
@@ -6024,41 +6024,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060306948}
   m_CullTransparentMesh: 1
---- !u!1 &1070901466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1070901467}
-  m_Layer: 0
-  m_Name: FloorPlan
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1070901467
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070901466}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1281355993}
-  - {fileID: 1691078678}
-  - {fileID: 1047149274}
-  - {fileID: 235584788}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1090586401
 GameObject:
   m_ObjectHideFlags: 0
@@ -7151,14 +7116,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273002349}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.39, y: 0, z: -0.41}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.9, y: 0, z: -0.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 473333896}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281355992
 GameObject:
   m_ObjectHideFlags: 0
@@ -7205,7 +7170,7 @@ Transform:
   - {fileID: 791905503}
   - {fileID: 222307112}
   - {fileID: 790901441}
-  m_Father: {fileID: 1070901467}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1291161214
 GameObject:
@@ -7848,7 +7813,7 @@ Transform:
   m_GameObject: {fileID: 1430193644}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.39, y: -0.7975, z: -0.41}
+  m_LocalPosition: {x: 11.899999, y: -0.7975, z: -0.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7871,7 +7836,7 @@ MonoBehaviour:
   EastExit: {fileID: 1691078674}
   WestExit: {fileID: 1047149270}
   ARCamera: {fileID: 1273002349}
-  floorPlan: {fileID: 1070901466}
+  floorPlan: {fileID: 0}
   twoMEast: {fileID: 828241533}
   fourMEast: {fileID: 1769059430}
   sixMEast: {fileID: 1048389760}
@@ -8899,7 +8864,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1070901467}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769059430
 GameObject:
@@ -10559,7 +10524,10 @@ SceneRoots:
   - {fileID: 567042497}
   - {fileID: 1273002351}
   - {fileID: 610410627}
-  - {fileID: 1070901467}
+  - {fileID: 1281355993}
+  - {fileID: 1691078678}
+  - {fileID: 1047149274}
+  - {fileID: 235584788}
   - {fileID: 1430193645}
   - {fileID: 829702679}
   - {fileID: 462285219}

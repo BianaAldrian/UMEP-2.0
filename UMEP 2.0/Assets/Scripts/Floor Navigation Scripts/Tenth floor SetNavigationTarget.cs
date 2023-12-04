@@ -27,23 +27,6 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
             Permission.RequestUserPermission(Permission.FineLocation);
         }
 
-        // Check if the compass is enabled, and enable it if not
-        if (!Input.compass.enabled)
-        {
-            Input.compass.enabled = true;
-        }
-
-        // Rotate the camera based on the compass heading
-        //ARCamera.transform.Rotate(0, Input.compass.trueHeading, 0);
-
-        // Rotate the floorPlan in the opposite direction
-        floorPlan.transform.eulerAngles = new Vector3(0, 0, 0);
-
-        // Set the Y rotation of the AR camera to the compass heading.
-        ARCamera.transform.eulerAngles = new Vector3(0, -Input.compass.trueHeading, 0);
-
-        Debug.Log("Compass heading: " + Input.compass.trueHeading);
-
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
 

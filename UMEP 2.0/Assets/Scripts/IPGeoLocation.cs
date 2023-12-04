@@ -10,7 +10,7 @@ public class IPGeoLocation : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(GetIP());
+        //StartCoroutine(GetIP());
     }
 
     IEnumerator GetIP()

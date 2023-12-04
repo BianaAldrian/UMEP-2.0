@@ -784,6 +784,8 @@ GameObject:
   - component: {fileID: 329512336}
   - component: {fileID: 329512335}
   - component: {fileID: 329512339}
+  - component: {fileID: 329512341}
+  - component: {fileID: 329512340}
   m_Layer: 5
   m_Name: Home (With/Without Interaction)
   m_TagString: Untagged
@@ -890,6 +892,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d43c2d01ce5f34e8951f1ae695861d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &329512340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329512334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f71d5e17b6f6404dbd6c0c61f23f1c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkConnection: {fileID: 329512341}
+  id_number: 11834358
+--- !u!114 &329512341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329512334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb96ef5a5c844fe6b80b5b6f31b0e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IP: 192.168.1.5
+  isConnected: 0
 --- !u!1 &365241136
 GameObject:
   m_ObjectHideFlags: 0

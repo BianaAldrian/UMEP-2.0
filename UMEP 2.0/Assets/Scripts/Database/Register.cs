@@ -23,47 +23,47 @@ public class Register : MonoBehaviour
 
     // Method to check inputs when the submit button is clicked
     void CheckInputs()
-{
-    // Reset error messages
-    errorHolder.text = "";
-
-    // Check if either id_number or mobile_number is empty
-    if (string.IsNullOrEmpty(id_number.text) || string.IsNullOrEmpty(mobile_number.text))
     {
-        // Display error message in the input field with error color
-        if (string.IsNullOrEmpty(id_number.text))
+        // Reset error messages
+        errorHolder.text = "";
+
+        // Check if either id_number or mobile_number is empty
+        if (string.IsNullOrEmpty(id_number.text) || string.IsNullOrEmpty(mobile_number.text))
         {
-            id_number.placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
-            id_number.placeholder.GetComponent<TextMeshProUGUI>().text = "ID Number cannot be empty!";
-        }
+            // Display error message in the input field with error color
+            if (string.IsNullOrEmpty(id_number.text))
+            {
+                id_number.placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
+                id_number.placeholder.GetComponent<TextMeshProUGUI>().text = "ID Number cannot be empty!";
+            }
 
-        if (string.IsNullOrEmpty(mobile_number.text))
+            if (string.IsNullOrEmpty(mobile_number.text))
+            {
+                mobile_number.placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
+                mobile_number.placeholder.GetComponent<TextMeshProUGUI>().text = "Mobile Number cannot be empty!";
+            }
+
+            // Display a general error message
+            errorHolder.text = "Please fill in all required fields.";
+        }
+        else if (password.text != password2.text)
         {
-            mobile_number.placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
-            mobile_number.placeholder.GetComponent<TextMeshProUGUI>().text = "Mobile Number cannot be empty!";
+            // Passwords do not match
+            password.placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
+            password.placeholder.GetComponent<TextMeshProUGUI>().text = "Passwords do not match!";
+
+            password2.placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
+            password2.placeholder.GetComponent<TextMeshProUGUI>().text = "Passwords do not match!";
+
+            // Display a general error message
+            errorHolder.text = "Passwords do not match.";
         }
-
-        // Display a general error message
-        errorHolder.text = "Please fill in all required fields.";
+        else
+        {
+            // Inputs are not empty and passwords match, you can proceed with your registration logic here
+            CheckUser();
+        }
     }
-    else if(password.text != password2.text)
-    {
-        // Passwords do not match
-        password.placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
-        password.placeholder.GetComponent<TextMeshProUGUI>().text = "Passwords do not match!";
-        
-        password2.placeholder.GetComponent<TextMeshProUGUI>().color = Color.red;
-        password2.placeholder.GetComponent<TextMeshProUGUI>().text = "Passwords do not match!";
-
-        // Display a general error message
-        errorHolder.text = "Passwords do not match.";
-    }
-    else
-    {
-        // Inputs are not empty and passwords match, you can proceed with your registration logic here
-        CheckUser();
-    }
-}
 
     void CheckUser()
     {
