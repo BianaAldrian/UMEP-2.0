@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.Android;
+using TMPro;
 
 public class TenthfloorSetNavigationTarget : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
     [SerializeField]
     private GameObject EastExit, WestExit;
     [SerializeField]
-    private GameObject ARCamera, floorPlan;
+    private GameObject ARCamera;
+    [SerializeField]
+    private TMP_Text compass;
 
     private NavMeshPath path;
     private LineRenderer line;
@@ -19,13 +22,17 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
     public GameObject twoMEast, fourMEast, sixMEast, eightMEast, tenMEast, twelveMEast, fourteenMEast, sixteenMEast, eighteenMEast, twentyMEast;
     public GameObject twoMWest, fourMWest, sixMWest, eightMWest, tenMWest, twelveMWest, fourteenMWest, sixteenMWest, eighteenMWest, twentyMWest;
 
-    void Awake()
+    void Start()
     {
         // Request location permission
         if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
         {
             Permission.RequestUserPermission(Permission.FineLocation);
         }
+
+        Input.compass.enabled = true;
+
+        Invoke("DelayShit", 2f);
 
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
@@ -36,6 +43,26 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
 
         // Add an event listener for the Reroute button
         Reroute.onClick.AddListener(RerouteNavigation);
+    }
+
+    void DelayShit()    
+    {
+        if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+        {
+            float trueHeading = Input.compass.trueHeading;
+
+            compass.text = "Angle: " + trueHeading.ToString();
+
+            // Rotate the ARCamera based on the true heading
+            ARCamera.transform.rotation = Quaternion.Euler(0, trueHeading, 0);
+
+            // Make the floorplan always face 20 degrees north
+            //floorPlan.transform.rotation = Quaternion.Euler(0, 20, 0);
+        }
+        else
+        {
+            Debug.Log("Fine location permission is not granted.");
+        }
     }
 
     void Update()

@@ -5,10 +5,12 @@ using UnityEngine.Networking;
 
 public class SetFloorUsers : MonoBehaviour
 {
+    /*
     public CheckConnection checkConnection; // Calling other script to connect
     public string id_number;
 
     private string previousBSSID; // Store the previous BSSID
+    */
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,8 @@ public class SetFloorUsers : MonoBehaviour
         {
             Permission.RequestUserPermission(Permission.FineLocation);
         }
+
+        Input.compass.enabled = true;
     }
 
     // Update is called once per frame
@@ -24,6 +28,7 @@ public class SetFloorUsers : MonoBehaviour
     {
         if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
         {
+            /*
             using var activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
             using var wifiManager = activity.Call<AndroidJavaObject>("getSystemService", "wifi");
             using var wifiInfo = wifiManager.Call<AndroidJavaObject>("getConnectionInfo");
@@ -43,6 +48,17 @@ public class SetFloorUsers : MonoBehaviour
             {
                 Debug.Log("Invalid Router");
             }
+            */
+
+            // Get the true heading
+            float trueHeading = Input.compass.trueHeading;
+
+            Debug.Log("True Heading: " + trueHeading);
+
+            // Save the string with a unique key
+            PlayerPrefs.SetFloat("trueHeading", trueHeading);
+            // Save the PlayerPrefs to disk (important to make sure data is actually saved)
+            PlayerPrefs.Save();
         }
         else
         {
@@ -50,6 +66,7 @@ public class SetFloorUsers : MonoBehaviour
         }
     }
 
+    /*
     void SetUserFloor(int floor_num)
     {
         if (checkConnection == null)
@@ -91,4 +108,5 @@ public class SetFloorUsers : MonoBehaviour
             Debug.Log($"Server response: {response}");
         }
     }
+    */
 }
