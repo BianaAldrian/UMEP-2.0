@@ -20,7 +20,6 @@ public class SetFloorUsers : MonoBehaviour
             Permission.RequestUserPermission(Permission.FineLocation);
         }
 
-        Input.compass.enabled = true;
     }
 
     // Update is called once per frame
@@ -49,16 +48,6 @@ public class SetFloorUsers : MonoBehaviour
                 Debug.Log("Invalid Router");
             }
             */
-
-            // Get the true heading
-            float trueHeading = Input.compass.trueHeading;
-
-            Debug.Log("True Heading: " + trueHeading);
-
-            // Save the string with a unique key
-            PlayerPrefs.SetFloat("trueHeading", trueHeading);
-            // Save the PlayerPrefs to disk (important to make sure data is actually saved)
-            PlayerPrefs.Save();
         }
         else
         {

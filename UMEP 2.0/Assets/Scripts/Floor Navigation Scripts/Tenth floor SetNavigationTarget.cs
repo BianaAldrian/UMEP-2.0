@@ -6,14 +6,10 @@ using TMPro;
 
 public class TenthfloorSetNavigationTarget : MonoBehaviour
 {
-    [SerializeField]
-    private Button Reroute;
-    [SerializeField]
-    private GameObject EastExit, WestExit;
-    [SerializeField]
-    private GameObject ARCamera;
-    [SerializeField]
-    private TMP_Text compass;
+    [SerializeField] private Button Reroute;
+    [SerializeField] private GameObject EastExit, WestExit;
+    [SerializeField] private GameObject ARCamera, floorPlan;
+    [SerializeField] private TMP_Text compass;
 
     private NavMeshPath path;
     private LineRenderer line;
@@ -32,9 +28,9 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
 
         Input.compass.enabled = true;
 
-        Invoke("DelayShit", 2f);
+        Invoke(nameof(DelayShit), 1f);
 
-        path = new NavMeshPath();
+        path = new NavMeshPath();   
         line = transform.GetComponent<LineRenderer>();
 
         // Calculate the shortest path using A* algorithm
@@ -49,15 +45,12 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
     {
         if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
         {
-            float trueHeading = Input.compass.trueHeading;
+            int trueHeading = (int)Input.compass.trueHeading; // The current true heading
 
             compass.text = "Angle: " + trueHeading.ToString();
 
             // Rotate the ARCamera based on the true heading
             ARCamera.transform.rotation = Quaternion.Euler(0, trueHeading, 0);
-
-            // Make the floorplan always face 20 degrees north
-            //floorPlan.transform.rotation = Quaternion.Euler(0, 20, 0);
         }
         else
         {
@@ -72,7 +65,6 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
         // Set the line renderer positions to the corners of the calculated path
         line.positionCount = path.corners.Length;
         line.SetPositions(path.corners);
-
         // Enable the line renderer so it is visible
         line.enabled = true;
     }

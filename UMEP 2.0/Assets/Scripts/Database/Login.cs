@@ -7,10 +7,8 @@ using System.Collections;
 
 public class Login : MonoBehaviour
 {
-    public CheckConnection checkConnection; //Calling other script to connect
-
     public string next_scene, user_type;
-    public TMP_Text errorHolder;
+    public TMP_Text ID_error, password_error;
     public TMP_InputField id_number, password;
     public Button proceed;
 
@@ -49,9 +47,10 @@ public class Login : MonoBehaviour
         }
 
         // Both fields are filled, call the LoginUser method
-        LoginUser();
+        //LoginUser();
     }
 
+    /*
     void LoginUser()
     {
         if (checkConnection == null)
@@ -69,6 +68,7 @@ public class Login : MonoBehaviour
             StartCoroutine(LoginUserCoroutine(serverIP));
         }
     }
+    */
 
     IEnumerator LoginUserCoroutine(string serverIP)
     {
