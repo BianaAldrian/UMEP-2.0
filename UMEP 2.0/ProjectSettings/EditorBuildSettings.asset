@@ -4,5 +4,292 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 7171cce2a61e3be4c9fec757c6dcc857
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/About/About_Evacuation
+      Plan (No Account).unity
+    guid: 96f119e657d908d41b7f7e8aa7912311
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/About/About_Home (No
+      Account).unity
+    guid: 5c1b889d09982394db63c532c69db777
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/About/About_Report Sample
+      (No Account).unity
+    guid: 67aee751563b0f941bac5eb496244c11
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Account & profiles/A&P_Evacuation
+      Plan (No Account).unity
+    guid: 745559206a0cf99499189b26a1344b61
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Account & profiles/A&P_Home
+      (No Account).unity
+    guid: e3863b4471fc7ed469220714ce0d2686
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Account & profiles/A&P_Report
+      Sample (No Account).unity
+    guid: a5a17c598e9c9b24385451bf9ecb6b3f
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Choose Your Profile/Choose
+      your profile_Evacuation Plan (No Account).unity
+    guid: c260d1c434e5234448dd55d6c7044e87
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Choose Your Profile/Choose
+      your profile_Home (No Account).unity
+    guid: 21a428ff1188f46469872300592d753d
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Choose Your Profile/Choose
+      your profile_Report Sample (No Account).unity
+    guid: 6c7b02f152a9dc842bfdf698e3d38afd
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Evacuation Plan/Evacuation
+      Plan (No Account).unity
+    guid: c76bc2947c401e847aa7971ee482aa5e
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Home/Home (No Account).unity
+    guid: 898519842d2574e49a3b06b3aa56c927
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Interactive Map/Interactive
+      Map (No Account).unity
+    guid: 339b4013be961364a97f1fbddea1df6e
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Log On (Admin)/Log On
+      (Admin).unity
+    guid: 4fbdd3ec8ff3282499d80aacb066441f
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Log On (Student)/Log
+      On (Student).unity
+    guid: 86c22b85f49a8c841808194d33fa27c4
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Quit/Quit (No Account).unity
+    guid: 188646b7aca4166459fb5b288e2d886d
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Registration (Admin)/Registration
+      (Admin).unity
+    guid: a81dab2f856f6324db27be8ed75890c0
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Registration (Student)/Registration
+      (Student).unity
+    guid: 14c96faad67b49641ab76f351e94b52a
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Report/Report Sample
+      (No Account).unity
+    guid: 6b5b4ae31445750488c5f23cc756bcfd
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Report History/Report
+      History (No Account).unity
+    guid: b322724853614844bab2799699bbc78d
+  - enabled: 1
+    path: Assets/Scenes/Undefined Account/No Account (Guest)/Safe Zone/Safe Zone.unity
+    guid: 5afb16112802f0a43b475288d0274e86
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/About/About_Evacuation
+      Plan (Admin).unity
+    guid: fb8dfdec0fd96cd439793eddbb177720
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/About/About_Home
+      (Admin).unity
+    guid: 6b5c6f84c0ee06b49a2127b99e6b74b6
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/About/About_Location
+      Tracker (Admin).unity
+    guid: 23c063f42785e56488fa39341567d548
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/About/About_Report
+      Sample (Admin).unity
+    guid: bd5af1f6e2280df4bb04538290579455
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Account & profiles/A&P_Evacuation
+      Plan (Admin).unity
+    guid: 776fb605ff7534b448079044314d6faa
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Account & profiles/A&P_Home
+      (Admin).unity
+    guid: b51dc574f5e322f4793255298453c047
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Account & profiles/A&P_Location
+      Tracker (Admin).unity
+    guid: 38ddcb2d99191c74b98873748f8058bb
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Account & profiles/A&P_Report
+      Sample (Admin).unity
+    guid: 9dae24e84716d9d42b52302a69d14f06
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Actual_Camera/Actual_Camera
+      (Admin).unity
+    guid: 16edb2e5f36fd4a418e3bbc82f1cb435
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Actual_Gallery/Actual_Gallery
+      (Admin).unity
+    guid: b0d0713cc69c1ce429d4dec422edf4ab
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Add Report/Add
+      Report (Admin).unity
+    guid: 5f918af92eab3824fb4834f2460e6fe0
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Audio/Audio (Admin).unity
+    guid: 9edd73d594341ca458f545fa23c0f766
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Camera/Camera
+      (Admin).unity
+    guid: 3c5e555d1b5647945b3537d9d8361793
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Chat/Chat (Admin).unity
+    guid: 0b595822bac9eaa44ac7ffd556337ad9
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Evacuation Plan/Evacuation
+      Plan (Admin).unity
+    guid: 9852bd88e824c2640aa35f2024058700
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Home/Home (Admin).unity
+    guid: 5a864ce7f5e684a4d99bb153f5f3da5c
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Interactive Map/Interactive
+      Map (Admin).unity
+    guid: 5ef08b01f1fe61a4d8d68b5ce0765b65
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Location Tracker/LocationTracker
+      (Admin).unity
+    guid: 14b506629d4eb3a448f8932ee7be3f88
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Logout/Logout
+      (Admin).unity
+    guid: a6bd0d9795002a94384f30e51640b38b
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Recorder/Recorder
+      (Admin).unity
+    guid: d9212fe45feb0204192011c3c2e98bba
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Report/Report
+      Sample (Admin).unity
+    guid: cbad4e4246dedd544b4bff1026c219ea
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Report History/Report
+      History_Evacuation Plan (Admin).unity
+    guid: 4180eda79fcf9ba478dd2166d1201b10
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Report History/Report
+      History_Home (Admin).unity
+    guid: 7a5a494f5f902c946a79ca1a36e7c647
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Report History/Report
+      History_Location Tracker (Admin).unity
+    guid: a71e95ee4a3c8ee4e85776e3ada265b9
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Report History/Report
+      History_Report Sample (Admin).unity
+    guid: 85ebf4cc8982fa143b0a59662cde9184
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Safe Zone/Safe
+      Zone.unity
+    guid: 42f6aa7ce7a604f16ade319663f46ceb
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Safe Zone/University
+      Of Makati Football Field.unity
+    guid: ebe0c6226915c1b49b45423f4267a2c2
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Successfully Created/Successfully
+      (Admin).unity
+    guid: e87eb4e8e4bb44e43b6d993a22323b3f
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Admin)/Successfully Reported/Report
+      Successful (Admin).unity
+    guid: 3c2e827f7b5cb1b4d84685b6482abded
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/About/About_Evacuation
+      Plan (Student).unity
+    guid: fe9450a01472b9c469e7bb6e2d5d2da6
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/About/About_Home
+      (Student).unity
+    guid: 9350bb505d7846b41a92777ce8c2e998
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/About/About_Report
+      Sample (Student).unity
+    guid: 1ad5d5147be4e6a4393f9f5a216b9efa
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Account & profiles/A&P_Evacuation
+      Plan (Student).unity
+    guid: ca98adf5f4b943942b370f02f4a50381
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Account & profiles/A&P_Home
+      (Student).unity
+    guid: 1b3f86b30f9d5054faa1d5129d0a963e
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Account & profiles/A&P_Report
+      Sample (Student).unity
+    guid: 32179e7298e0c5b4fbdce9502aee9fa3
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Actual_Camera/Actual_Camera
+      (Student).unity
+    guid: f7454c1597d396547a17fc0749c19ca4
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Actual_Gallery/Actual_Gallery
+      (Student).unity
+    guid: fa71fe5c487ad324fb8d715d45099f74
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Add Report/Add
+      Report (Student).unity
+    guid: 78b9b46653922144a81ae7c2c0ee22a2
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Audio/Audio
+      (Student).unity
+    guid: 2353cce0a1f9d8d40802bed97e1cbf06
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Camera/Camera
+      (Student).unity
+    guid: f8d22b3babcb9e746916f5ef78d740fb
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Chat/Chat (Student).unity
+    guid: 982b5cfa8cbff6548abfa45d465af88e
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Evacuation Plan/Evacuation
+      Plan (Student).unity
+    guid: e6b8f1933fb922a47b561567fee3f16e
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Home/Home (Student).unity
+    guid: c724b4ea5bf897548bdeb37002156db5
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Interactive
+      Map/Interactive Map (Student).unity
+    guid: 242de67a94bd2564881ff112c7d2ea85
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Logout/Logout
+      (Student).unity
+    guid: 327dfac012b70d2448bcc1549d347a22
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Recorder/Recorder
+      (Admin).unity
+    guid: ea1a32f18403c024ab70b5b3cc61db49
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Report/Report
+      Sample (Student).unity
+    guid: 80d831c5591dec449a11bcf5e6a6dba0
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Report history/Report
+      History_Evacuation Plan (Student).unity
+    guid: dc9512409331e884e99b80bd1daaca30
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Report history/Report
+      History_Home (Student).unity
+    guid: 64975e8578f7a1243978fcbae04bcae2
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Report history/Report
+      History_Report Sample (Student).unity
+    guid: aabc63614f380f645bd41da0fbd2a721
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Safe Zone/Safe
+      Zone.unity
+    guid: 90b07ad579ce2a04ea1943da1b0d34a7
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Successfully
+      Created/Successfully (Student).unity
+    guid: 1c4849de7b7d10c439c8d295c0742a23
+  - enabled: 1
+    path: Assets/Scenes/Defined Account/Account_Registered (Student)/Successfully
+      Reported/Report Successful (Student).unity
+    guid: adc9e77d07f506e408f2ff98ace3bc31
   m_configObjects: {}
