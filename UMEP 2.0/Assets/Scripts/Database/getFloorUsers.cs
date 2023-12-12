@@ -6,14 +6,15 @@ using UnityEngine.Networking;
 
 public class getFloorUsers : MonoBehaviour
 {
-    public CheckConnection checkConnection; //Calling other script to connect
-
+    private string serverIP;
     public TMP_Dropdown dropdown;
     public TMP_Text listItemPrefab;
     public Transform listItemHolder;
 
     private void Start()
     {
+        serverIP = PlayerPrefs.GetString("serverIP");
+
         // Subscribe to the OnValueChanged event to listen for changes in the dropdown
         dropdown.onValueChanged.AddListener(delegate
         {
@@ -24,14 +25,6 @@ public class getFloorUsers : MonoBehaviour
     // Method called when the dropdown value changes
     void DropdownValueChanged(TMP_Dropdown change)
     {
-        if (checkConnection == null)
-        {
-            Debug.LogError("CheckConnection is null");
-            return;
-        }
-
-        bool isConnected = checkConnection.isConnected;
-        string serverIP = checkConnection.IP;
 
         // Get the chosen value using the value property
         int chosenValueIndex = change.value;
@@ -51,16 +44,11 @@ public class getFloorUsers : MonoBehaviour
             floor_num = 9;
         }
 
-        // Send a request to the PHP script with the selected floor_num
-        if (isConnected)
-        {
-            Debug.Log("Connected");
-            StartCoroutine(GetFloorData(serverIP, floor_num));
-        }
+        StartCoroutine(GetFloorData(floor_num));
     }
 
     // Coroutine to send a request to the PHP script
-    IEnumerator GetFloorData(string serverIP, int floor_num)
+    IEnumerator GetFloorData(int floor_num)
     {
 
         // Create form data

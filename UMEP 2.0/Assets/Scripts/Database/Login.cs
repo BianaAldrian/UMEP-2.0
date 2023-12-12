@@ -7,6 +7,7 @@ using System.Collections;
 
 public class Login : MonoBehaviour
 {
+    private string serverIP;
     public string next_scene, user_type;
     public TMP_Text ID_error, password_error;
     public TMP_InputField id_number, password;
@@ -15,6 +16,16 @@ public class Login : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        serverIP = PlayerPrefs.GetString("serverIP");
+
+        if (string.IsNullOrEmpty(serverIP))
+        {
+            Debug.LogError("Server IP is empty or null. Please set a valid server IP.");
+            return;
+        }
+
+        Debug.Log("serverIP: " + serverIP);
+
         // Attach the CheckInputs method to the onClick event of the submit button
         proceed.onClick.AddListener(CheckInputs);
     }
@@ -46,31 +57,10 @@ public class Login : MonoBehaviour
             return; // Stop further processing as Password is required
         }
 
-        // Both fields are filled, call the LoginUser method
-        //LoginUser();
+        StartCoroutine(LoginUserCoroutine());
     }
 
-    /*
-    void LoginUser()
-    {
-        if (checkConnection == null)
-        {
-            Debug.LogError("CheckConnection is null");
-            return;
-        }
-
-        bool isConnected = checkConnection.isConnected;
-        string serverIP = checkConnection.IP;
-
-        if (isConnected)
-        {
-            Debug.Log("Connected");
-            StartCoroutine(LoginUserCoroutine(serverIP));
-        }
-    }
-    */
-
-    IEnumerator LoginUserCoroutine(string serverIP)
+    IEnumerator LoginUserCoroutine()
     {
         WWWForm form = new WWWForm();
         form.AddField("id_number", id_number.text);
@@ -115,6 +105,7 @@ public class Login : MonoBehaviour
                 // Password is valid, you can proceed with your logic here
                 Debug.Log("Login successful!");
                 PlayerPrefs.SetString("id_number", id_number.text);
+                PlayerPrefs.Save();
                 GoToNextScene();
             }
         }

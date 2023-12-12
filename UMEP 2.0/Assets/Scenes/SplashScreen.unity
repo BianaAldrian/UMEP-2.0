@@ -610,13 +610,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf86a44e61e78f6419b13360ee048d7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IP: 192.168.1.6
+  serverIP: 192.168.10.106
   firstImage: {fileID: 1476647687}
   secondImage: {fileID: 437921602}
   thirdImage: {fileID: 902271933}
-  fadeDuration: 2
+  fadeDuration: 1.5
   sceneName: Home (No Account)
-  androidDialog: {fileID: 1541925430}
 --- !u!114 &1541925430
 MonoBehaviour:
   m_ObjectHideFlags: 0

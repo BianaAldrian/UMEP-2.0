@@ -43,6 +43,7 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
 
     void DelayShit()    
     {
+        /*
         if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
         {
             int trueHeading = (int)Input.compass.trueHeading; // The current true heading
@@ -55,6 +56,120 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
         else
         {
             Debug.Log("Fine location permission is not granted.");
+        }
+        */
+
+        // To load the values in another scene
+        //float trueHeading = PlayerPrefs.GetFloat("trueHeading");
+        //string direction = PlayerPrefs.GetString("Direction");
+        //int distance = PlayerPrefs.GetInt("Distance");
+
+        //float trueHeading = Input.compass.trueHeading;
+        //ARCamera.transform.Rotate(0, trueHeading, 0);
+
+        //ARCamera.transform.rotation = Quaternion.Euler(0f, trueHeading, 0f);
+
+        //ARCamera.transform.position = twoMEast.transform.position;
+
+        string direction = PlayerPrefs.GetString("Direction");
+        int distance = PlayerPrefs.GetInt("Distance");
+
+        GameObject targetObject = null;
+
+        if (direction == "east/southeast")
+        {
+            switch (distance)
+            {
+                case 2:
+                    targetObject = twoMEast;
+                    break;
+                case 4:
+                    targetObject = fourMEast;
+                    break;
+                case 6:
+                    targetObject = sixMEast;
+                    break;
+                case 8:
+                    targetObject = eightMEast;
+                    break;
+                case 10:
+                    targetObject = tenMEast;
+                    break;
+                case 12:
+                    targetObject = twelveMEast;
+                    break;
+                case 14:
+                    targetObject = fourteenMEast;
+                    break;
+                case 16:
+                    targetObject = sixteenMEast;
+                    break;
+                case 18:
+                    targetObject = eighteenMEast;
+                    break;
+                case 20:
+                    targetObject = twentyMEast;
+                    break;
+                default:
+                    Debug.Log("Invalid distance");
+                    break;
+            }
+        }
+        else if (direction == "west/southwest")
+        {
+            switch (distance)
+            {
+                case 2:
+                    targetObject = twoMWest;
+                    break;
+                case 4:
+                    targetObject = fourMWest;
+                    break;
+                case 6:
+                    targetObject = sixMWest;
+                    break;
+                case 8:
+                    targetObject = eightMWest;
+                    break;
+                case 10:
+                    targetObject = tenMWest;
+                    break;
+                case 12:
+                    targetObject = twelveMWest;
+                    break;
+                case 14:
+                    targetObject = fourteenMWest;
+                    break;
+                case 16:
+                    targetObject = sixteenMWest;
+                    break;
+                case 18:
+                    targetObject = eighteenMWest;
+                    break;
+                case 20:
+                    targetObject = twentyMWest;
+                    break;
+                default:
+                    Debug.Log("Invalid distance");
+                    break;
+            }
+        }
+        else
+        {
+            Debug.Log("Invalid direction");
+        }
+        if (targetObject == null)
+        {
+            Debug.Log("Invalid direction or distance");
+        }
+
+        if (targetObject != null)
+        {
+            ARCamera.transform.position = targetObject.transform.position;
+        }
+        else
+        {
+            Debug.Log("Invalid direction or distance");
         }
     }
 

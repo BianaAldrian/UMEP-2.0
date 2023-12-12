@@ -789,7 +789,6 @@ GameObject:
   - component: {fileID: 443069176}
   - component: {fileID: 443069175}
   - component: {fileID: 443069174}
-  - component: {fileID: 443069179}
   - component: {fileID: 443069178}
   - component: {fileID: 443069180}
   - component: {fileID: 443069181}
@@ -901,7 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612806437bd0e4cb68ea435952e63113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkConnection: {fileID: 443069179}
+  checkConnection: {fileID: 0}
   dropdown: {fileID: 1389961633}
   listItemPrefab: {fileID: 9073198636474419927, guid: 0884a545417c14e9ca5627b3d46b4c94, type: 3}
   listItemHolder: {fileID: 1495512617}
