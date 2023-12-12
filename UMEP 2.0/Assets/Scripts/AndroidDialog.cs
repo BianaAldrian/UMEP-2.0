@@ -20,7 +20,7 @@ public class AndroidDialog : MonoBehaviour
     private void Awake()
     {
         InitializeCurrentActivity();
-        CreateEditText();
+        //CreateEditText();
     }
 
     // Initialize the current Android activity
@@ -32,6 +32,7 @@ public class AndroidDialog : MonoBehaviour
         }
     }
 
+    /*
     // Create an Android EditText widget
     private void CreateEditText()
     {
@@ -43,8 +44,15 @@ public class AndroidDialog : MonoBehaviour
     {
         if (editText != null)
         {
-            // Call the getText method on the EditText to retrieve its text
-            return editText.Call<string>("getText").ToString();
+            // Call the getText method on the EditText to retrieve its text as an Editable
+            AndroidJavaObject editable = editText.Call<AndroidJavaObject>("getText");
+
+            // Convert the Editable to a string
+            string text = editable.Call<string>("toString");
+
+            Debug.Log($"EditText value: {text}");  // Add this line for debugging
+
+            return text;
         }
         else
         {
@@ -52,6 +60,7 @@ public class AndroidDialog : MonoBehaviour
             return null;
         }
     }
+    */
 
     // Show an Android AlertDialog with specified parameters
     public void ShowAlertDialog(string title, string message, string positiveButton, string negativeButton, System.Action onPositiveButtonClick, System.Action onNegativeButtonClick)
@@ -108,6 +117,7 @@ public class AndroidDialog : MonoBehaviour
         }
     }
 
+    /*
     // Set the visibility of the EditText to be visible
     public void ShowEditText()
     {
@@ -129,6 +139,7 @@ public class AndroidDialog : MonoBehaviour
             Debug.Log($"EditText visibility set to: {visibility}");
         }
     }
+    */
 
     // Dismiss the AlertDialog
     public void CloseAlertDialog()

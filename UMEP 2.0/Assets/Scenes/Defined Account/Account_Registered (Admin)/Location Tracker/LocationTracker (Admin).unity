@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44407454, g: 0.4933318, b: 0.5724006, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -789,7 +789,6 @@ GameObject:
   - component: {fileID: 443069176}
   - component: {fileID: 443069175}
   - component: {fileID: 443069174}
-  - component: {fileID: 443069179}
   - component: {fileID: 443069178}
   m_Layer: 5
   m_Name: Canvas
@@ -899,24 +898,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612806437bd0e4cb68ea435952e63113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkConnection: {fileID: 443069179}
+  checkConnection: {fileID: 0}
   dropdown: {fileID: 1389961633}
   listItemPrefab: {fileID: 9073198636474419927, guid: 0884a545417c14e9ca5627b3d46b4c94, type: 3}
   listItemHolder: {fileID: 1495512617}
---- !u!114 &443069179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443069173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb96ef5a5c844fe6b80b5b6f31b0e37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IP: 192.168.10.106
-  isConnected: 0
 --- !u!1 &580678918
 GameObject:
   m_ObjectHideFlags: 0

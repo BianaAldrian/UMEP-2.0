@@ -2,81 +2,103 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Android;
 using UnityEngine.Networking;
+using System.Net;
+using System.Net.Sockets;
 
 public class SetFloorUsers : MonoBehaviour
 {
-    /*
-    public CheckConnection checkConnection; // Calling other script to connect
-    public string id_number;
+    private string serverIP;
+    private string id_number = "";
+    private string deviceUUID;
 
-    private string previousBSSID; // Store the previous BSSID
-    */
+    private string previousBSSID=""; // Store the previous BSSID
+
+    private float checkInterval = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
+        serverIP = PlayerPrefs.GetString("serverIP");
+        id_number = PlayerPrefs.GetString("id_number");
+
         if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
         {
             Permission.RequestUserPermission(Permission.FineLocation);
         }
 
+        deviceUUID = SystemInfo.deviceUniqueIdentifier;
+
+        // Print the device UUID to the console
+        Debug.Log("Device UUID: " + deviceUUID);
+
+        // Start the coroutine for checking BSSID changes
+        StartCoroutine(CheckBSSIDChanges());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator CheckBSSIDChanges()
     {
-        if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+        while (true)
         {
-            /*
-            using var activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
-            using var wifiManager = activity.Call<AndroidJavaObject>("getSystemService", "wifi");
-            using var wifiInfo = wifiManager.Call<AndroidJavaObject>("getConnectionInfo");
-            string bssid = wifiInfo.Call<string>("getBSSID");
+            yield return new WaitForSeconds(checkInterval);
 
-            Debug.Log($"BSSID: {bssid}");
+            if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+            {
+                using (var activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity"))
+                using (var wifiManager = activity.Call<AndroidJavaObject>("getSystemService", "wifi"))
+                using (var wifiInfo = wifiManager.Call<AndroidJavaObject>("getConnectionInfo"))
+                {
+                    string currentBSSID = wifiInfo.Call<string>("getBSSID");
 
-            if (bssid == "00:eb:d8:7c:84:8c")
-            {
-                SetUserFloor(10);
-            }
-            else if (bssid == "00:eb:d8:c7:88:88")
-            {
-                SetUserFloor(9);
+                    Debug.Log($"BSSID: {currentBSSID}");
+
+                    /*
+                    // Check if the current BSSID is different from the previous one
+                    if (currentBSSID != previousBSSID)
+                    {
+                        previousBSSID = currentBSSID; // Update previousBSSID
+
+                        // Perform the condition based on the current BSSID
+                        if (currentBSSID == "00:eb:d8:7c:84:8c")
+                        {
+                            StartCoroutine(SetUserFloorCoroutine(10));
+                        }
+                        else if (currentBSSID == "00:eb:d8:c7:88:88")
+                        {
+                            StartCoroutine(SetUserFloorCoroutine(9));
+                        }
+                        else
+                        {
+                            Debug.Log("Invalid Router");
+                        }
+                    }
+                    */
+
+                    // Perform the condition based on the current BSSID
+                    if (currentBSSID == "00:eb:d8:7c:84:8c")
+                    {
+                        StartCoroutine(SetUserFloorCoroutine(10));
+                    }
+                    else if (currentBSSID == "00:eb:d8:c7:88:88")
+                    {
+                        StartCoroutine(SetUserFloorCoroutine(9));   
+                    }
+                    else
+                    {
+                        Debug.Log("Invalid Router");
+                    }
+                }
             }
             else
             {
-                Debug.Log("Invalid Router");
+                Debug.Log("Fine location permission is not granted.");
             }
-            */
-        }
-        else
-        {
-            Debug.Log("Fine location permission is not granted.");
         }
     }
 
-    /*
-    void SetUserFloor(int floor_num)
-    {
-        if (checkConnection == null)
-        {
-            Debug.LogError("CheckConnection is null");
-            return;
-        }
-
-        bool isConnected = checkConnection.isConnected;
-        string serverIP = checkConnection.IP;
-
-        if (isConnected)
-        {
-            Debug.Log("Connected");
-            StartCoroutine(SetUserFloorCoroutine(serverIP, floor_num));
-        }
-    }
-
-    IEnumerator SetUserFloorCoroutine(string serverIP, int floor_num)
+    IEnumerator SetUserFloorCoroutine(int floor_num)
     {
         WWWForm form = new WWWForm();
+        form.AddField("deviceUUID", deviceUUID);
         form.AddField("id_number", id_number);
         form.AddField("floor_num", floor_num);
 
@@ -95,7 +117,69 @@ public class SetFloorUsers : MonoBehaviour
         {
             string response = webRequest.downloadHandler.text;
             Debug.Log($"Server response: {response}");
+            /*
+            if (response == "exist")
+            {
+                Debug.Log("ipAddress already exist");
+            }
+            */
+            if (response == "update_success")
+            {
+                Debug.Log("updated successfully");
+            }
+
+            if (response == "insert_success")
+            {
+                Debug.Log("inserted successfully");
+            }
         }
     }
-    */
+
+    void ConnectToStrongestWifi()
+    {
+        AndroidJavaClass unityPlayerClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject unityActivity = unityPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
+
+        AndroidJavaObject wifiManager = unityActivity.Call<AndroidJavaObject>("getSystemService", "wifi");
+
+        // Start a Wi-Fi scan
+        wifiManager.Call("startScan");
+
+        // Get the scan results
+        AndroidJavaObject scanResults = wifiManager.Call<AndroidJavaObject>("getScanResults");
+
+        // Get the list of scan results
+        AndroidJavaObject resultList = scanResults.Call<AndroidJavaObject>("getResultList");
+
+        int numResults = resultList.Call<int>("size");
+
+        int maxSignalStrength = int.MinValue;
+        string strongestWifiSSID = "";
+
+        // Iterate through the scan results to find the strongest Wi-Fi network
+        for (int i = 0; i < numResults; i++)
+        {
+            AndroidJavaObject scanResult = resultList.Call<AndroidJavaObject>("get", i);
+            string ssid = scanResult.Call<string>("SSID");
+            int signalStrength = scanResult.Call<int>("level");
+
+            if (signalStrength > maxSignalStrength)
+            {
+                maxSignalStrength = signalStrength;
+                strongestWifiSSID = ssid;
+            }
+        }
+
+        // Connect to the strongest Wi-Fi network
+        if (!string.IsNullOrEmpty(strongestWifiSSID))
+        {
+            string strongestWifiPassword = "your_wifi_password";
+            wifiManager.Call("enableNetwork", strongestWifiSSID, strongestWifiPassword, true);
+        }
+        else
+        {
+            Debug.LogError("No available Wi-Fi networks found.");
+        }
+    }
+
 }
