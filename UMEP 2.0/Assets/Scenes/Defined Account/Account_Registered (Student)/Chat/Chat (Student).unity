@@ -259,7 +259,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -128.82758, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316923114
 MonoBehaviour:
@@ -1408,7 +1408,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 3}
-  m_SizeDelta: {x: 0, y: -6}
+  m_SizeDelta: {x: -128.82758, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153113641
 MonoBehaviour:
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   maxMessages: 25
   chatPanel: {fileID: 1669510428}
   textObject: {fileID: 1141706895865572886, guid: de0f05139708082408296081515e6456, type: 3}
-  userIconPrefab: {fileID: 0}
+  userIconPrefab: {fileID: 2140680169508194876, guid: b30c8005fc4c0e84b8de8184890da72e, type: 3}
   chatBox: {fileID: 699821066}
   playerMessage: {r: 0, g: 0, b: 0, a: 1}
   info: {r: 0, g: 0.50980395, b: 1, a: 1}
