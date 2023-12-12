@@ -2,15 +2,14 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.Android;
+using TMPro;
 
 public class TenthfloorSetNavigationTarget : MonoBehaviour
 {
-    [SerializeField]
-    private Button Reroute;
-    [SerializeField]
-    private GameObject EastExit, WestExit;
-    [SerializeField]
-    private GameObject ARCamera, floorPlan;
+    [SerializeField] private Button Reroute;
+    [SerializeField] private GameObject EastExit, WestExit;
+    [SerializeField] private GameObject ARCamera, floorPlan;
+    [SerializeField] private TMP_Text compass;
 
     private NavMeshPath path;
     private LineRenderer line;
@@ -19,7 +18,7 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
     public GameObject twoMEast, fourMEast, sixMEast, eightMEast, tenMEast, twelveMEast, fourteenMEast, sixteenMEast, eighteenMEast, twentyMEast;
     public GameObject twoMWest, fourMWest, sixMWest, eightMWest, tenMWest, twelveMWest, fourteenMWest, sixteenMWest, eighteenMWest, twentyMWest;
 
-    void Awake()
+    void Start()
     {
         // Request location permission
         if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
@@ -27,7 +26,11 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
             Permission.RequestUserPermission(Permission.FineLocation);
         }
 
-        path = new NavMeshPath();
+        Input.compass.enabled = true;
+
+        Invoke(nameof(DelayShit), 1f);
+
+        path = new NavMeshPath();   
         line = transform.GetComponent<LineRenderer>();
 
         // Calculate the shortest path using A* algorithm
@@ -38,6 +41,23 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
         Reroute.onClick.AddListener(RerouteNavigation);
     }
 
+    void DelayShit()    
+    {
+        if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+        {
+            int trueHeading = (int)Input.compass.trueHeading; // The current true heading
+
+            compass.text = "Angle: " + trueHeading.ToString();
+
+            // Rotate the ARCamera based on the true heading
+            ARCamera.transform.rotation = Quaternion.Euler(0, trueHeading, 0);
+        }
+        else
+        {
+            Debug.Log("Fine location permission is not granted.");
+        }
+    }
+
     void Update()
     {
         NavMesh.CalculatePath(transform.position, targetExit.transform.position, NavMesh.AllAreas, path);
@@ -45,7 +65,6 @@ public class TenthfloorSetNavigationTarget : MonoBehaviour
         // Set the line renderer positions to the corners of the calculated path
         line.positionCount = path.corners.Length;
         line.SetPositions(path.corners);
-
         // Enable the line renderer so it is visible
         line.enabled = true;
     }

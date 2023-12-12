@@ -5,10 +5,12 @@ using UnityEngine.Networking;
 
 public class SetFloorUsers : MonoBehaviour
 {
+    /*
     public CheckConnection checkConnection; // Calling other script to connect
     public string id_number;
 
     private string previousBSSID; // Store the previous BSSID
+    */
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,7 @@ public class SetFloorUsers : MonoBehaviour
         {
             Permission.RequestUserPermission(Permission.FineLocation);
         }
+
     }
 
     // Update is called once per frame
@@ -24,6 +27,7 @@ public class SetFloorUsers : MonoBehaviour
     {
         if (Permission.HasUserAuthorizedPermission(Permission.FineLocation))
         {
+            /*
             using var activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
             using var wifiManager = activity.Call<AndroidJavaObject>("getSystemService", "wifi");
             using var wifiInfo = wifiManager.Call<AndroidJavaObject>("getConnectionInfo");
@@ -43,6 +47,7 @@ public class SetFloorUsers : MonoBehaviour
             {
                 Debug.Log("Invalid Router");
             }
+            */
         }
         else
         {
@@ -50,6 +55,7 @@ public class SetFloorUsers : MonoBehaviour
         }
     }
 
+    /*
     void SetUserFloor(int floor_num)
     {
         if (checkConnection == null)
@@ -91,4 +97,5 @@ public class SetFloorUsers : MonoBehaviour
             Debug.Log($"Server response: {response}");
         }
     }
+    */
 }
