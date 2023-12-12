@@ -1609,6 +1609,7 @@ MonoBehaviour:
   maxMessages: 25
   chatPanel: {fileID: 1669510428}
   textObject: {fileID: 1141706895865572886, guid: de0f05139708082408296081515e6456, type: 3}
+  userIconPrefab: {fileID: 0}
   chatBox: {fileID: 699821066}
   playerMessage: {r: 0, g: 0, b: 0, a: 1}
   info: {r: 0, g: 0.50980395, b: 1, a: 1}
